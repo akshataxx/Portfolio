@@ -11,6 +11,8 @@ const Home = () => {
 
   const nameArray = ['k', 's', 'h', 'a', 't', 'a']
   const jobArray = [
+    'a',
+    '',
     's',
     'o',
     'f',
@@ -40,7 +42,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="text-zone">
+      <div/>
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -49,7 +51,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img
               src={LogoTitle}
-              alt="Web Developer Name"
+              alt="JavaScript Developer Name, Web Developer Name"
             />
             <AnimatedLetters
               letterClass={letterClass}
@@ -63,12 +65,11 @@ const Home = () => {
               idx={22}
             />
           </h1>
+        <h2> Software Engineer </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-
-      </div>
 
       <Loader type="pacman" />
     </>
@@ -78,3 +79,4 @@ const Home = () => {
 export default Home
 
 //<Logo />
+// <div className="text-zone">

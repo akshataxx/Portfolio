@@ -1,0 +1,12 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "path": "../../components/Portfolio/flight.png",
+      "title": "Flight",
+      "description": "ReactJS, CSS, NodeJS, MongoDB, Jest"
+
+    }
+
+  ]
+}

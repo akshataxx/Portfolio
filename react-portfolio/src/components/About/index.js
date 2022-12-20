@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
+  faJava,
   faCss3,
-  faGitAlt,
+  faPython,
   faHtml5,
-  faJsSquare,
-  faReact,
+  faJs,
+  faReact
+
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -26,28 +27,29 @@ const About = () => {
       <div className="container about-page">
         <div className="text-zone">
           <h1>
+
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>
+
           <p>
             I'm an avid coder and extremely passionate about all things tech!!
-            I'm super interested in the data space (specially data engineering)
-            and full stack dev!
+            I'm super interested in the data space (specifically data engineering)
+            and full stack development!
           </p>
           <p align="LEFT">
             I am super passionate about seeing more female representation in
-            tech!! Apart from this, I'm also into dancing and love watching TV
-            shows (Modern Family , GOT, AHS,  Gossip Girl xoxo)
+            tech!! My hobbies include playing tennis, swimming, hiking and playing heaps of word search!
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faJava} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -59,10 +61,10 @@ const About = () => {
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <FontAwesomeIcon icon={faJs} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faPython} color="#EC4D28" />
             </div>
           </div>
         </div>

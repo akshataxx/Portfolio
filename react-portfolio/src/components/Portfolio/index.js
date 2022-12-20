@@ -4,7 +4,9 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import { getDocs, collection } from 'firebase/firestore';
 
-import portfolioData from '../../data/portfolio.json';
+import portfolioData from "./portfolio.json";
+//import "./flight.png";
+import FP from '../../components/Portfolio/flight.png'
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   console.log(portfolioData);
@@ -29,24 +31,24 @@ const Portfolio = () => {
     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
   }*/
 
-  const renderPortfolio = (portfolio) => {
+  const renderPortfolio = (portfolioData) => {
     return (
       <div className="images-container">
         {
-          portfolio.map((port, idx) => {
+          portfolioData.map((port,idx) => {
+            console.log(portfolioData);
+            console.log(port);
             return (
               <div className="image-box" key={idx}>
+
                 <img
-                  src={port.cover}
+                  src={port.path}
                   className="portfolio-image"
                   alt="portfolio" />
                 <div className="content">
-                  <p className="title">{port.name}</p>
+                  <p className="title">{port.title}</p>
                   <h4 className="description">{port.description}</h4>
-                  <button
-                    className="btn"
-                    onClick={() => window.open(port.url)}
-                  >View</button>
+
                 </div>
               </div>
             )
@@ -55,7 +57,6 @@ const Portfolio = () => {
       </div>
     );
   }
-
 
   return (
     <>
@@ -75,3 +76,8 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+
+// <button
+//   className="btn"
+//   onClick={() => window.open(port.url)}
+// >View</button>

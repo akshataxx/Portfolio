@@ -12,12 +12,12 @@
     color: #fff;
     font-size: 56px;
     line-height: 53px;
-    margin: 0;
+    margin: 100px;
     font-family: 'Coolvetica';
     font-weight: 400;
 
     &:before {
-      content: '<h1>';
+
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
@@ -28,13 +28,13 @@
     }
 
     &:after {
-      content: '<h1/>';
+
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
       position: absolute;
       margin-top: 18px;
-      margin-left: 20px;
+      margin-left: 100px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
@@ -52,6 +52,7 @@
   h2 {
     color: #8d8d8d;
     margin-top: 20px;
+    margin-left: 80px;
     font-weight: 400;
     font-size: 11px;
     font-family: sans-serif;
@@ -66,9 +67,10 @@
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 10px 50px;
     border: 1px solid #ffd700;
     margin-top: 25px;
+    margin-left: 80px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;

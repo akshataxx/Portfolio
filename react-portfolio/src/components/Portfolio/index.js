@@ -5,7 +5,7 @@ import "./index.scss";
 import { getDocs, collection } from 'firebase/firestore';
 
 import portfolioData from "./portfolio.json";
-//import "./flight.png";
+import "./flight.png";
 import FP from '../../components/Portfolio/flight.png'
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');

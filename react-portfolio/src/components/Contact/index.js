@@ -44,8 +44,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am always down to post any blogs/explain tech concepts. Please
-            feel free to reach out to me.
+            I am always down to post any blogs/explain tech concepts.
+            Also open to any frontend / full stack job opportunities.
+            Please feel free to reach out to me.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -86,16 +87,17 @@ const Contact = () => {
         <div className="info-map">
           Akshata Dhuraji,
           <br />
-          Serbia,
+          Sydney
           <br />
-          Sydney, 2000 <br />
+          NSW, 2000 <br/>
+          Australia<br/>
           <br />
           <span>akshata.dhuraji@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[151.2093, 33.8688]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-            <Marker position={[151.2093, 33.8688]}>
+          <MapContainer center={[-33.871, 151.2226]} zoom={13} >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[-33.871, 151.2226]}>
               <Popup>Akshata lives here!! </Popup>
             </Marker>
           </MapContainer>
